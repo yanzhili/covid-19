@@ -110,6 +110,36 @@ class HomeScreen extends StatelessWidget {
                         onChanged: (value) {}))
               ],
             ),
+          ),
+          SizedBox(height: 20),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20),
+            child: Column(
+              children: <Widget>[
+                Row(
+                  children: <Widget>[
+                    RichText(
+                      text: TextSpan(children: [
+                        TextSpan(
+                          text: "Case Update\n",
+                          style: kTitleTextstyle,
+                        ),
+                        TextSpan(
+                          text: "Case Update\n",
+                          style: TextStyle(color: kTextLightColor),
+                        )
+                      ]),
+                    ),
+                    Spacer(),
+                    Text(
+                      "See details",
+                      style: TextStyle(
+                          color: kPrimaryColor, fontWeight: FontWeight.w600),
+                    )
+                  ],
+                )
+              ],
+            ),
           )
         ],
       ),
