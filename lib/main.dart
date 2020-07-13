@@ -4,6 +4,8 @@ import 'package:covid_19/widgets/my_header.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
+import 'info_screen.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -16,11 +18,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Covid 19',
       theme: ThemeData(
-          scaffoldBackgroundColor: kBackgroundColor,
-          fontFamily: "Poppins",
-          textTheme: TextTheme(
-            bodyText2: TextStyle(color: kBodyTextColor),
-          )),
+        scaffoldBackgroundColor: kBackgroundColor,
+        fontFamily: "Poppins",
+        textTheme: TextTheme(
+          bodyText2: TextStyle(color: kBodyTextColor),
+        ),
+      ),
       home: HomeScreen(),
     );
   }
